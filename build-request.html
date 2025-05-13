@@ -56,11 +56,15 @@
 <body>
   <header style="display: flex; align-items: center; padding-bottom: 1rem;">
     <img src="/ai-logo.png" alt="AI Logo" style="width: 48px; height: 48px; margin-right: 12px; border-radius: 6px;">
-    <h2 style="margin: 0; font-size: 1.5rem; color: #065f46;"><a href="/" style="text-decoration: none; color: inherit;">The AI Lab</a></h2>
+    <h2 style="margin: 0; font-size: 1.5rem; color: #065f46;">
+      <a href="/" style="text-decoration: none; color: inherit;">The AI Lab</a>
+    </h2>
   </header>
+
   <h1>Request a Custom AI Tool</h1>
+
   <form action="https://formspree.io/f/mpwdygqo" method="POST">
-    <input type="hidden" name="_next" value="/quote-confirmation.html">
+    <input type="hidden" name="_next" value="https://ai-lab-mauve.vercel.app/quote-confirmation.html">
 
     <label for="name">Your Name *</label>
     <input type="text" name="name" id="name" required>
