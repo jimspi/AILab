@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The AI Lab: Where Smart Ideas Come to Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e6fff5, #ccf5e1);
+      color: #1a1a1a;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 2rem;
+      background: #b9fbc0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInDown 1s ease-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #065f46;
+    }
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      margin-right: 14px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      padding: 2.5rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .headline {
+      font-size: 3.5rem;
+      text-align: center;
+      color: #065f46;
+      background: linear-gradient(90deg, #10b981, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      animation: glow 3s ease-in-out infinite alternate;
+      margin: 1rem 0;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px rgba(16, 185, 129, 0.5); }
+      to { text-shadow: 0 0 20px rgba(16, 185, 129, 1); }
+    }
+    .bolt {
+      display: inline-block;
+      animation: pulseAnim 1.8s ease-in-out infinite;
+      text-shadow: none;
+      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+    }
+    @keyframes pulseAnim {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.25); opacity: 1; }
+    }
+    .hero-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1.5rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #0f5132;
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 1.5rem auto;
+    }
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .tool {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .tool:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+    .tool h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #047857;
+    }
+    .tool a {
+      text-decoration: none;
+      background-color: #10b981;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      display: inline-block;
+      margin-top: 0.75rem;
+    }
+    .tool a:hover {
+      background-color: #059669;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/ai-logo.png" alt="AI Logo" class="logo-icon">
+      The AI Lab: Where Smart Ideas Come to Life
+    </div>
+  </header>
+  <section class="hero-title">
+    <h1 class="headline"><span class="bolt">⚡</span> The AI Lab <span class="bolt">⚡</span></h1>
+  </section>
+  <div class="container">
+    <h2>Need an AI Tool Built for You?</h2>
+    <p>Tell me what kind of tool, service, or automation you’re looking for. Whether it's for your business, content, or creative project—I'll help you build it with AI.</p>
+    <div class="tools">
+      <div class="tool">
+        <h2>Clue Chain</h2>
+        <p>A clever daily word game that challenges your riddle-solving skills.</p>
+        <p style="font-size: 0.9rem; color: #0f5132;">Monetize by offering daily subscriptions or branded puzzle sponsorships.</p>
+        <a href="https://clue-chain-gamey-1fcz-jy7ylwn81-jimspis-projects.vercel.app/">Launch Clue Chain →</a>
+      </div>
+      <div class="tool">
+        <h2>Emoji Puzzle</h2>
+        <p>Can you guess the phrase from the emoji clues? A visual brain teaser for all ages.</p>
+        <p style="font-size: 0.9rem; color: #0f5132;">Use it to build your audience or license it to brands as interactive content.</p>
+        <a href="https://emojipuzzle.vercel.app/">Try Emoji Puzzle →</a>
+      </div>
+      <div class="tool">
+        <h2>AI Bootcamp</h2>
+        <p>A video-led course to jumpstart your AI skills with real tools and examples.</p>
+        <p style="font-size: 0.9rem; color: #0f5132;">Turn your skills into income by selling your own AI-powered services or bootcamp.</p>
+        <a href="https://bootcampwithvideo.vercel.app/">Start Bootcamp →</a>
+      </div>
+    </div>
+  </div>
+  <section class="request-section">
+    <div class="container" style="text-align: center;">
+      <h2 style="color: #065f46; font-size: 2rem; margin-bottom: 1.25rem;">Have an Idea? Let’s Build It Together</h2>
+      <p style="max-width: 700px; margin: 0 auto 1.5rem auto; font-size: 1.1rem;">Click below to tell me what kind of tool, service, or automation you’re looking for. Whether it's for your business, content, or creative project—I'll help you build it with AI.</p>
+      <a href="/build-request.html" style="text-decoration: none; background-color: #10b981; color: white; padding: 0.9rem 1.6rem; border-radius: 10px; font-size: 1.1rem; font-weight: 600; display: inline-block; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">Start Your Request →</a>
+    </div>
+  </section>
+</body>
+</html>
